@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import AES from './models/experience-companies/aes';
+import { Project } from './models/experience-companies/base';
+import ThaiSon from './models/experience-companies/thaison';
+import Viniva from './models/experience-companies/vinova';
 import information from './models/information';
 import Social from './models/social';
 
@@ -10,12 +14,29 @@ import Social from './models/social';
 })
 export class ResumeComponent implements OnInit {
 
-  vinovaResponsibilities: Array<string> = [""];
+  vinova: Viniva={
+    responsibilities:["test 1","test2",""],
+    goals: ["","",""],
+    projects: [{name: "", link:""},
+                ]
+  }
 
-  aesResponsibilities: Array<string> = ["",
-  ""];
+  aes: AES={
+    responsibilities:["Testing main flow and UX/UI.",
+                      "Manage bugs and features on Excel.",
+                      "Reporting to the leader."],
+    goals: ["Projects go live.",
+            "Assured high-quality product.",
+            "Preventing bugs before the product is on staging."],
+    projects: [{name: "Savills", link:"https://www.savills.com.vn/"}]
+  }
 
-  thaisonResponsibilities: Array<string> = [""];
+  thaison: ThaiSon={
+    responsibilities:["","",""],
+    goals: ["","",""],
+    projects: [{name: "", link:""},
+               {name:"", link:""}]
+  }
 
   information: information = {
     name: "Tran Thi Truc Anh",

@@ -54,7 +54,29 @@
                         <h3 class="mb-0">QC Lead</h3>
                         <div class="subheading mb-3">Vinova Pte. Ltd</div>
                         <div>Localtion:...</div>
-                        <p>testing....</p>
+                        <ng-container>
+                            <div>Responsibilities:
+                                <ul *ngFor="let i of vinova.responsibilities">
+                                    <li>
+                                        {{i}}
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                Goals:
+                                <ul>
+                                    <li *ngFor="let i of vinova.goals">
+                                      {{i}}
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                Projects: 
+                                <span  *ngFor="let i of vinova.projects">
+                                    <a href="{{i.link}}" target="_blank">{{i.name}}</a>
+                                </span>
+                            </div>
+                        </ng-container>
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">Nov 2019 - Present</span></div>
                 </div>
@@ -63,39 +85,29 @@
                         <h3 class="mb-0">QC Engineer</h3>
                         <div class="subheading mb-3">AES Technologies</div>
                         <div>Localtion:....</div>
-                        <div>Responsibilities:
-                            <ul>
-                                <li>
-                                    Testing main flow and UX/UI.
-                                </li>
-                                <li>
-                                    Manage bugs and features on Excel.
-                                </li>
-                                <li>
-                                    Reporting to the leader.
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            Goals:
-                            <ul>
-                                <li>
-                                    Projects go live.
-                                </li>
-                                <li>
-                                    Assured high-quality product.
-                                </li>
-                                <li>
-                                    Preventing bugs before the product is on staging.
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            Projects: Savills
-                        </div>
-                        <div>
-                            Link: Savills
-                        </div>
+                        <ng-container>
+                            <div>Responsibilities:
+                                <ul *ngFor="let i of aes.responsibilities">
+                                    <li>
+                                        {{i}}
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                Goals:
+                                <ul>
+                                    <li *ngFor="let i of aes.goals">
+                                      {{i}}
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                Projects: 
+                                <span  *ngFor="let i of aes.projects">
+                                    <a href="{{i.link}}" target="_blank">{{i.name}}</a>
+                                </span>
+                            </div>
+                        </ng-container>
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">Nov 2018 - Aug 2019</span></div>
                 </div>
@@ -104,20 +116,29 @@
                         <h3 class="mb-0">Techical Support Staff</h3>
                         <div class="subheading mb-3">Thái Sơn Soft Co .,Ltd</div>
                         <div>Localtion:....</div>
-                        <p>Responsibilities:
-                            - Support customers use custom software via Team viewer
-                            - Solve E-Cuss problems over the phone.
-                            - Attend professional training sessions.
-                            - Instructions and support required by customers.
-                            - The monthly report.
-
-                            Goals:
-                            - Help businesses to process the customs declaration quickly.
-                            - Clearly solve difficult cases, save time.
-
-                            Projects: EBH, ECUSS VNASS
-                            Link: https://ebh.vn/, http://thaison.vn/san-pham/ecus
-                        </p>
+                        <ng-container>
+                            <div>Responsibilities:
+                                <ul *ngFor="let i of thaison.responsibilities">
+                                    <li>
+                                        {{i}}
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                Goals:
+                                <ul>
+                                    <li *ngFor="let i of thaison.goals">
+                                      {{i}}
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                Projects: 
+                                <span  *ngFor="let i of thaison.projects">
+                                    <a href="{{i.link}}" target="_blank">{{i.name}}</a>
+                                </span>
+                            </div>
+                        </ng-container>
                     </div>
                     <div class="flex-shrink-0"><span class="text-primary">Feb 2015 - Aug 2018</span></div>
                 </div>
