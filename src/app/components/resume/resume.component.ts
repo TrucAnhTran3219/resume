@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import AES from './models/experience-companies/aes';
-import { Project } from './models/experience-companies/base';
 import ThaiSon from './models/experience-companies/thaison';
 import Viniva from './models/experience-companies/vinova';
 import information from './models/information';
